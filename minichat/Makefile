@@ -6,10 +6,10 @@ CLIC		= client.c
 
 all : $(CLIENT) $(SERVER)
 
-$(CLIENT) : $(CLOBJ)
+$(CLIENT) : $(CLIC)
 	@cc -Wall -Werror -Wextra client.c -o client
 
-$(SERVER) : $(SEROBJ)
+$(SERVER) : $(SERC)
 	@cc -Wall -Werror -Wextra server.c -o server
 
 clean :
